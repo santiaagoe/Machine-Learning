@@ -1,0 +1,45 @@
+# --- Python ---
+__pycache__/
+*.py[cod]
+*.so
+.Python
+env/
+venv/
+.venv/
+ENV/
+
+# --- Jupyter ---
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/*
+profile_default/
+ipython_config.py
+
+# --- Datos pesados o privados ---
+# Los datasets públicos y livianos (< 50 MB) SÍ conviene versionarlos:
+# hacen el proyecto reproducible. Ignora solo los grandes o privados.
+*.parquet
+*.db
+*.sqlite3
+data/raw/large/
+data/private/
+
+# --- Credenciales (nunca subir) ---
+.env
+*.key
+*.pem
+credentials.json
+secrets.yaml
+
+# --- Sistema operativo ---
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+Thumbs.db
+desktop.ini
+
+# --- Editores ---
+.vscode/
+.idea/
+*.swp
