@@ -4,7 +4,7 @@ Proyectos de análisis de datos y machine learning que he desarrollado. Cada car
 proyecto independiente con su propio README, notebook y datos.
 
 **Santiago Espinoza** · Universidad de Chile
-<!-- Contacto: santiago.espinoza.correa@gmail.com-->
+<!-- Agrega tu LinkedIn y correo acá: se ve mejor que dejarlo vacío -->
 
 ---
 
@@ -12,8 +12,7 @@ proyecto independiente con su propio README, notebook y datos.
 
 | # | Proyecto | Qué resuelve | Técnicas | Stack |
 |---|----------|--------------|----------|-------|
-| 01 | [Segmentación de clientes para marketing](./01-segmentacion-clientes-marketing) | Segmenta ~2.200 clientes de una cadena de retail e identifica el perfil del consumidor de vino para dirigir campañas | EDA · K-Means · KNN | pandas, scikit-learn, seaborn, matplotlib |
-
+| 01 | [Segmentación de clientes y predicción de campañas](./01-segmentacion-clientes-marketing) | Segmenta ~2.200 clientes de retail y predice quién aceptará la próxima campaña: contactar al 10% mejor rankeado cuadruplica la tasa de aceptación | EDA · PCA · K-Means · Random Forest | pandas, scikit-learn, seaborn, matplotlib |
 
 ---
 
@@ -21,7 +20,7 @@ proyecto independiente con su propio README, notebook y datos.
 
 ```
 Machine-Learning/
-├── README.md                              
+├── README.md                              ← estás aquí
 ├── .gitignore
 └── 01-segmentacion-clientes-marketing/
     ├── README.md                          ← detalle del proyecto
@@ -30,13 +29,16 @@ Machine-Learning/
         └── marketing_campaign.csv
 ```
 
+Cada proyecto sigue la misma convención: `NN-nombre-descriptivo/` con el notebook en la raíz
+de la carpeta y los datos en `data/`. El prefijo numérico mantiene el orden cronológico.
+
 ---
 
 ## Stack
 
 **Lenguaje:** Python 3.10+
 
-**Análisis y modelado:** pandas · NumPy · scikit-learn · statsmodels
+**Análisis y modelado:** pandas · NumPy · scikit-learn
 
 **Visualización:** matplotlib · seaborn
 
@@ -47,7 +49,7 @@ Machine-Learning/
 ## Cómo ejecutar los proyectos
 
 Cada notebook incluye un badge **Open in Colab** que lo abre listo para ejecutar, sin
-instalar nada. Para correrlo localmente:
+instalar nada y sin descargar datos. Para correrlo localmente:
 
 ```bash
 git clone https://github.com/santiaagoe/Machine-Learning.git
